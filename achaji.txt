@@ -1,0 +1,8 @@
+ip dhcp pool POOL1
+network 192.168.100.0 255.255.255.0
+dns-server 192.168.100.1
+default-server 192.168.100.1
+lease 12
+ip dhcp excluded-address 192.168.100.1 192.168.100.19
+show ip dhcp binding
+ip route 20.0.0.0 255.255.255.0 --hop
